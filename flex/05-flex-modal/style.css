@@ -4,6 +4,12 @@ html, body {
   height: 100%;
 }
 
+.header {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -20,6 +26,14 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 16px;
+  display: flex;
+  gap: 16px; /* can do this instead of the margin left on .right */
+}
+
+.right {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .icon {
@@ -33,6 +47,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -46,6 +61,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto; /* not what the solution says to do but works the same way right? */
 }
 
 button {
@@ -57,10 +73,15 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  margin-right: 5px;
 }
 
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.text {
+  margin-bottom: .75em;
 }

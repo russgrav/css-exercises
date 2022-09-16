@@ -12,6 +12,17 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; not necessary */
+  padding: 8px;
+}
+
+/* can combine .left and .right into one as there's no need to set the justify-content value to flex-start or flex-end for each */
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .profile-image {
@@ -45,4 +56,8 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
 }

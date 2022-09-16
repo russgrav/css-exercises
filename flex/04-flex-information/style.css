@@ -1,5 +1,8 @@
+/* no need to add any flex properties to the body */
+
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center; /* can do this for the whole body instead of just for .text, will also center the title */
 }
 
 img {
@@ -10,7 +13,19 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 32px;
 }
+
+.plants {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.plant {
+  max-width: 200px; /* much more elegant and simple solution */s
+}
+
 
 /* do not edit this footer */
 .footer {
